@@ -97,7 +97,7 @@ public class Card {
         //Card test = new Card();
         //System.out.println(Rank.CLUBS + " card, bitch");
         //System.out.println(Value.FIVE.getIntegerCardVal());
-        System.out.println();
+
         Card test = new Card(Suite.HEARTS,Rank.FOUR);
         System.out.println(test);
     }
