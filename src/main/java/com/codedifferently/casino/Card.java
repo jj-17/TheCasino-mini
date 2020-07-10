@@ -109,5 +109,4 @@ public class Card {
         Card test = new Card(Suite.HEARTS,Rank.FOUR);
         System.out.println(test);
     }
->>>>>>> 510b376e74dbae94ae1babadb237f31684599bd9
 }

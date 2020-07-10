@@ -9,7 +9,6 @@ public class Casino {
         Scanner sc = new Scanner(System.in);
         String response = sc.next();
         inputStr = JOptionPane.showInputDialog("Would you like to play a game");
-        //System.out.println("");
         while(!(response.equalsIgnoreCase("yes"))) {
         }
 
@@ -20,7 +19,7 @@ public class Casino {
             System.out.println("See you next time");
         }
 
-    } ;
+    }
 }
 
 
