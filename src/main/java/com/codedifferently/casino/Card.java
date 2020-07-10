@@ -2,6 +2,15 @@ package com.codedifferently.casino;
 
 public class Card {
 
+    final Suite suite;
+    final Rank rank;
+
+    public Card(Suite suite, Rank rank)
+    {
+        //enum are their own seperate classes that were created to become instance vars for the Card class
+        this.suite = suite;
+        this.rank = rank;
+    }
     private enum Suite
     {
         //enums must be created as their own class, you can add primitives
@@ -56,9 +65,19 @@ public class Card {
 
         public int getCardRank()
         {
-            return 0;
+            return this.getIntegerCardVal();
         }
 
+    }
+
+    public Rank getRank()
+    {
+        return this.rank;
+    }
+
+    public Suite getSuite()
+    {
+        return this.suite;
     }
 
     public static void main(String[] args) {
