@@ -7,7 +7,7 @@ public class Card {
 
     public Card(Suite suite, Rank rank)
     {
-        //enum are their own seperate classes that were created to become instance vars for the Card class
+        //enum are their own separate classes that were created to become instance vars for the Card class
         this.suite = suite;
         this.rank = rank;
     }
@@ -80,10 +80,10 @@ public class Card {
         return this.suite;
     }
 
-    public static void main(String[] args) {
-        Card test = new Card();
+  //  public static void main(String[] args) {
+       // Card test = new Card();
         //System.out.println(Rank.CLUBS + " card, bitch");
         //System.out.println(Value.FIVE.getIntegerCardVal());
-        System.out.println();
-    }
+        //System.out.println();
+    //}
 }
