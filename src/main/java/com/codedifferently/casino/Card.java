@@ -87,14 +87,14 @@ public class Card {
         return this.suite;
     }
 
-<<<<<<< HEAD
+
   //  public static void main(String[] args) {
        // Card test = new Card();
         //System.out.println(Rank.CLUBS + " card, bitch");
         //System.out.println(Value.FIVE.getIntegerCardVal());
         //System.out.println();
     //}
-=======
+
     @Override
     public String toString() {
         String card = this.getRank() + " of " + this.getSuite();
@@ -105,8 +105,12 @@ public class Card {
         //Card test = new Card();
         //System.out.println(Rank.CLUBS + " card, bitch");
         //System.out.println(Value.FIVE.getIntegerCardVal());
-        System.out.println();
+
         Card test = new Card(Suite.HEARTS,Rank.FOUR);
         System.out.println(test);
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> bc366ba83c6a3806748ed38e815403d2a253c8ec
 }
