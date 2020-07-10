@@ -11,7 +11,9 @@ public class Card {
         this.suite = suite;
         this.rank = rank;
     }
-    private enum Suite
+
+    //enum data types have to be public in order to use them in your constuctors
+    public enum Suite
     {
         //enums must be created as their own class, you can add primitives
         //to their value by this: enumVar(primitive variable)
@@ -22,7 +24,7 @@ public class Card {
         DIAMONDS;
     }
 
-    private enum Rank
+    public enum Rank
     {
         //why must you declare the enums first? b/c they act like instance vars?
 
@@ -75,15 +77,28 @@ public class Card {
         return this.rank;
     }
 
+    public int getRankValue()
+    {
+        return this.rank.getIntegerCardVal();
+    }
+
     public Suite getSuite()
     {
         return this.suite;
     }
 
+    @Override
+    public String toString() {
+        String card = this.getRank() + " of " + this.getSuite();
+        return card;
+    }
+
     public static void main(String[] args) {
-        Card test = new Card();
+        //Card test = new Card();
         //System.out.println(Rank.CLUBS + " card, bitch");
         //System.out.println(Value.FIVE.getIntegerCardVal());
         System.out.println();
+        Card test = new Card(Suite.HEARTS,Rank.FOUR);
+        System.out.println(test);
     }
 }
