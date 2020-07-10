@@ -17,6 +17,7 @@ public class Player {
 
     Player(String name){
         this.name = name;
+        hand=new ArrayList<Card>(5);
     }
     public String getName() {
         return name;
@@ -31,6 +32,9 @@ public class Player {
 
     public double getMoney() {
         return money;
+    }
+    public void setMoney(double money) {
+        this.money = money;
     }
 }
 

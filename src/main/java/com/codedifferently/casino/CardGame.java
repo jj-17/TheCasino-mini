@@ -1,5 +1,5 @@
 package com.codedifferently.casino;
 
-public class CardGame {
+public class CardGame implements Game{
 
 }
