@@ -21,7 +21,7 @@ public class Card {
         HEARTS,
         CLUBS,
         SPADES,
-        DIAMONDS;
+        DIAMONDS
     }
 
     public enum Rank
@@ -97,20 +97,15 @@ public class Card {
 
     @Override
     public String toString() {
-        String card = this.getRank() + " of " + this.getSuite();
-        return card;
+        return this.getRank() + " of " + this.getSuite();
     }
 
-    public static void main(String[] args) {
-        //Card test = new Card();
-        //System.out.println(Rank.CLUBS + " card, bitch");
-        //System.out.println(Value.FIVE.getIntegerCardVal());
-
-        Card test = new Card(Suite.HEARTS,Rank.FOUR);
-        System.out.println(test);
-    }
-<<<<<<< HEAD
-=======
-
->>>>>>> bc366ba83c6a3806748ed38e815403d2a253c8ec
+//    public static void main(String[] args) {
+//        //Card test = new Card();
+//        //System.out.println(Rank.CLUBS + " card, bitch");
+//        //System.out.println(Value.FIVE.getIntegerCardVal());
+//
+//        Card test = new Card(Suite.HEARTS,Rank.FOUR);
+//        System.out.println(test);
+//    }
 }

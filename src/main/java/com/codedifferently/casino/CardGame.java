@@ -7,6 +7,10 @@ public class CardGame implements Game{
 
     }
 
+    public void endGame() {
+
+    }
+
 
     //extends game interface (the start method)
 
@@ -26,6 +30,10 @@ public class CardGame implements Game{
 
     public void startGame(Game selectedGame) {
         selectedGame.startGame();
+
+    }
+    public void endGame(Game selectedGame) {
+        selectedGame.endGame();
 
     }
 }

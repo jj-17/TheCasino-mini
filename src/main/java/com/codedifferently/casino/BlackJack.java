@@ -1,4 +1,4 @@
 package com.codedifferently.casino;
 
-public class BlackJack extends CardGame implements Game {
+public class BlackJack extends CardGame {
 }

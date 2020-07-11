@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Player {
     private String name;
-    private ArrayList<Card> hand;
+    protected static ArrayList<Card> hand;
     private double money;
     private double bet;
 
@@ -12,12 +12,12 @@ public class Player {
     Player(String name, double money){
         this.name = name;
         this.money = money;
-        hand=new ArrayList<Card>(7);
+        hand=new ArrayList<>(7);
     }
 
     Player(String name){
         this.name = name;
-        hand=new ArrayList<Card>(5);
+        hand=new ArrayList<>(5);
     }
     public String getName() {
         return name;
@@ -26,9 +26,6 @@ public class Player {
         return hand;
     }
 
-    private void bet(double bet){
-        this.bet = bet;
-    }
 
     public double getMoney() {
         return money;
@@ -36,5 +33,16 @@ public class Player {
     public void setMoney(double money) {
         this.money = money;
     }
+
+    public void dealHandG(Deck deck) {
+        for (int i = 1; i <= 7; i++) {
+                hand.add(deck.dealTopCard());
+        }
+    }
+//    public void dealHandB( Deck deck) {
+//        for (int i = 1; i <= 21; i++) {
+//                hand.add(deck.deal());
+//       }
+//    }
 }
 
