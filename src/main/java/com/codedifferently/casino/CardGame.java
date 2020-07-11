@@ -1,7 +1,8 @@
 package com.codedifferently.casino;
 
 public class CardGame implements Game{
-    @Override
+    Game game;
+    //@Override
     public void startGame() {
 
     }
@@ -11,5 +12,20 @@ public class CardGame implements Game{
 
     //switch cases to choice game what to play
 
+    public void selectGame(char selection) {
+        switch(selection){
+            case 'b':
+            game= new BlackJack();
+            //default;
+            case 'g':
+            game= new GoFish();
+            //default;
+    }
+    this.startGame(game);
+    }
 
+    public void startGame(Game selectedGame) {
+        selectedGame.startGame();
+
+    }
 }
