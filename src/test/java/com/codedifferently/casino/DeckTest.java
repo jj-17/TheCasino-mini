@@ -6,9 +6,9 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class DeckTest {
-    Deck deck=new Deck();
+    Deck deck =new Deck();
     @Test
-    public void constructorTest(){
+    public void constructorTest() {
         assertEquals(52,deck.length());
     }
 }
