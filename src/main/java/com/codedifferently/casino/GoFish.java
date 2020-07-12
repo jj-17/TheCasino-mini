@@ -14,20 +14,20 @@ public class GoFish extends CardGame{
         goFishDeck.shuffle();
         player.dealHandG(goFishDeck);
     }
-    public boolean goFish(){
-        int count = 0;
-        for(int i=0;i<hand.size(); i++){
-            if (hand.get(i).equals(hand.get(i+1))) {
-                count++;
-            }
-        }
-            if (count >= 4) {
-                win=true;
-                return true;
-            }
-        return false;
-    }
-    public boolean isWin() {
-        return win;
-    }
+//    public boolean goFish(){
+//        int count = 0;
+//        for(int i=0;i<hand.size(); i++){
+//            if (hand.get(i).equals(hand.get(i+1))) {
+//                count++;
+//            }
+//        }
+//            if (count >= 4) {
+//                win=true;
+//                return true;
+//            }
+//        return false;
+//    }
+//    public boolean isWin() {
+//        return win;
+//    }
 }

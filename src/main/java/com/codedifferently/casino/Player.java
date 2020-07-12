@@ -4,20 +4,47 @@ import java.util.ArrayList;
 
 public class Player {
     private String name;
-    protected static ArrayList<Card> hand;
+    private ArrayList<Card> hand;
+    private ArrayList<Card> secondHand;
     private double money;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setHand(ArrayList<Card> hand) {
+        this.hand = hand;
+    }
+
+    public double getBet() {
+        return bet;
+    }
+
+    public void setBet(double bet) {
+        this.bet = bet;
+    }
+
     private double bet;
 
+    public ArrayList<Card> getSecondHand() {
+        return secondHand;
+    }
+
+    public void setSecondHand(ArrayList<Card> secondHand) {
+        this.secondHand = secondHand;
+    }
 
     Player(String name, double money){
         this.name = name;
         this.money = money;
         hand=new ArrayList<>(7);
+        this.secondHand = new ArrayList<>();
     }
 
     Player(String name){
         this.name = name;
         hand=new ArrayList<>(5);
+        this.secondHand = new ArrayList<>();
     }
     public String getName() {
         return name;
