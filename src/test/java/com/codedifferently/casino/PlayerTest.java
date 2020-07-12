@@ -1,5 +1,6 @@
 package com.codedifferently.casino;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -25,8 +26,17 @@ public class PlayerTest {
         assertEquals(7, player2.getHand().size());
     }
     @Test
-    public void getCard() {
+    public void getCards() {
+        Card test1 = new Card(Card.Suite.HEARTS, Card.Rank.ACE);
+        Card test2 = new Card(Card.Suite.HEARTS, Card.Rank.TWO);
+        Card test3 = new Card(Card.Suite.HEARTS, Card.Rank.THREE);
 
+        player.getHand().add(test1);
+        player.getHand().add(test2);
+        player.getHand().add(test3);
+        String actual = this.player.getHand() + "";
+        String expected = "[ACE of HEARTS, TWO of HEARTS, THREE of HEARTS]";
+        Assert.assertEquals(expected, actual);
     }
 }
 

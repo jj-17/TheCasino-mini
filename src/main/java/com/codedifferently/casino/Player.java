@@ -30,8 +30,6 @@ public class Player {
         return secondHand;
     }
 
-
-
     public void setSecondHand(ArrayList<Card> secondHand) {
         this.secondHand = secondHand;
     }

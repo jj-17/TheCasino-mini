@@ -39,7 +39,6 @@ public class BlackJack extends CardGame {
             //boolean validBet = false;
             System.out.println("Please enter your initial bet: ");
 
-
             try {
                 //this variable is static so that it can be used for eceptions throughout the program/while loops
                 attemptedBet = sc.nextDouble();
@@ -47,9 +46,7 @@ public class BlackJack extends CardGame {
                 System.out.println("\nYou did not provide a number\n");
                 checkBet();
                 break;
-
             }
-
 
             System.out.println(this.getPlayer().getMoney());
             if (attemptedBet <= playersCurrentMoney && playersCurrentMoney != 0) {

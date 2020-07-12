@@ -108,4 +108,14 @@ public class Card {
 //        Card test = new Card(Suite.HEARTS,Rank.FOUR);
 //        System.out.println(test);
 //    }
+
+    public static void main(String[] args) {
+        Card test1 = new Card(Suite.HEARTS, Rank.ACE);
+        Card test2 = new Card(Suite.HEARTS, Rank.TWO);
+        Card test3 = new Card(Suite.HEARTS, Rank.THREE);
+
+        System.out.println(test1);
+        System.out.println(test2);
+        System.out.println(test3);
+    }
 }
