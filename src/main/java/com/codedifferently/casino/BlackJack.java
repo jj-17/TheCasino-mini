@@ -1,6 +1,7 @@
 package com.codedifferently.casino;
 
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BlackJack extends CardGame {
@@ -15,6 +16,7 @@ public class BlackJack extends CardGame {
     {
         this.player = player;
         this.card_Deck = new Deck();
+        card_Deck.shuffle();
         this.gameBet = 0;
         this.win = false;
     }
@@ -59,17 +61,54 @@ public class BlackJack extends CardGame {
                 attemptedBet = sc.nextDouble();
             }
             //you have finished/given a valid amt of money to start the game
-
         }
         return true;
     }
 
     public void startGame()
     {
-
+        if (checkBet())
+        {
+            //case
+        }
 
 
     }
+
+    public boolean win_Condition() {
+        return false;
+    }
+
+    public int getTotalCardValue(ArrayList<Card> deck) {
+
+        //for ()
+        return 0;
+    }
+
+    public void setAceCardValue() {
+
+        Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+
+        if (input == 1)
+        {
+            //this.getPlayer().getHand().get()
+        }
+        else if (input == 1)
+        {
+
+        }
+    }
+
+//    public int findAce(ArrayList<Card> hand)
+//    {
+//        if (hand.contains())
+//        int indexOfAce = 0;
+//        while (indexOfAce <= hand.size())
+//        {
+//            if
+//        }
+//    }
 
     public void endGame()
     {
