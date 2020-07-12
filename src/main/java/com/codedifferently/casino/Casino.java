@@ -36,7 +36,7 @@ public class Casino {
             CardGame game = null;
             if (selectedGame == JOptionPane.NO_OPTION) {
                 JOptionPane.showMessageDialog(null,"Let's play Go Fish!");
-               game.selectGame('g');//starts goFish game
+               //game.selectGame('g');//starts goFish game
                 //System.out.println("g");
             }else if(money.equals("0")
                     ||Integer.parseInt(money)<Integer.parseInt(bet)){
@@ -44,7 +44,7 @@ public class Casino {
                 main(args);//restarts process if not enough money
             }else {
                 JOptionPane.showMessageDialog(null,"Let's play Black Jack!");
-                game.selectGame('b');//starts blackJack game
+                //game.selectGame('b');//starts blackJack game
                 //System.out.println("b");
             }
         }

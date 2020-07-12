@@ -24,5 +24,9 @@ public class PlayerTest {
         player2.dealHandG(deck);
         assertEquals(7, player2.getHand().size());
     }
+    @Test
+    public void getCard() {
+
+    }
 }
 

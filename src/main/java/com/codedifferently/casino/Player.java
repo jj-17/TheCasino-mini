@@ -30,6 +30,8 @@ public class Player {
         return secondHand;
     }
 
+
+
     public void setSecondHand(ArrayList<Card> secondHand) {
         this.secondHand = secondHand;
     }
@@ -71,5 +73,13 @@ public class Player {
 //                hand.add(deck.deal());
 //       }
 //    }
+
+    public static void main(String[] args) {
+        Deck testDeck = new Deck();
+
+        Player test = new Player("joshua", 100);
+        test.getHand().add(testDeck.dealTopCard());
+        System.out.println(test.getHand());
+    }
 }
 
